@@ -11,21 +11,21 @@
         "dist_min": "20",
         "dist_max": "120",
         "dialogue": {
-        	"r0": {
-        		"type": "npcline",
-            	"text": "What the hell are you doing in my home?",
-            	"next": "r1"
+            "r0": {
+                "type": "npcline",
+                "text": "What the hell are you doing in my home?",
+                "next": "r1"
             },
             "r1": {
                 "type": "choice",
                 "options": [
                     {
-                    	"text": "Just asking a few questions, you better answer",
-                    	"next": "r2"
+                        "text": "Just asking a few questions, you better answer",
+                        "next": "r2"
                     },
                     {
-                    	"text": "Sorry, didn't mean to disturb you",
-                    	"next": "exit"
+                        "text": "Sorry, didn't mean to disturb you",
+                        "next": "exit"
                     }
                 ]
             },
@@ -35,85 +35,508 @@
                 "next": "r3"
             },
             "r3": {
-            	"type": "choice",
-            	"options": [
-            		{
-            			"text": "How old are you?",
-            			"next": "r4"
-            		},
-            		{
-            			"text": "What are you doing?",
-            			"next": "r7"
-            		},
-            		{
-            			"text": "Thanks for your time",
-            			"next": "exit"
-            		}
-            	]
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "How old are you?",
+                        "next": "r4"
+                    },
+                    {
+                        "text": "What are you doing?",
+                        "next": "r7"
+                    },
+                    {
+                        "text": "Thanks for your time",
+                        "next": "exit"
+                    }
+                ]
             },
             "r4": {
-            	"type": "npcline",
-            	"text": "124. Do I look old to you?",
-            	"next": "r5"
+                "type": "npcline",
+                "text": "124. Do I look old to you?",
+                "next": "r5"
             },
             "r5": {
-            	"type": "choice",
-            	"options": [
-            		{
-            			"text": "Older than I will ever look",
-            			"next": "r6"
-            		},
-            		{
-            			"text": "Shut up and answer my questions",
-            			"next": "r3"
-            		}
-            	]
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "Older than I will ever look",
+                        "next": "r6"
+                    },
+                    {
+                        "text": "Shut up and answer my questions",
+                        "next": "r3"
+                    }
+                ]
             },
             "r6": {
-            	"type": "npcline",
-            	"text": "You filthy robot! Get out of my home",
-            	"next": "exit"
+                "type": "npcline",
+                "text": "You filthy robot! Get out of my home",
+                "next": "exit"
             },
             "r7": {
-				"type": "npcline",
-            	"text": "Reading.",
-            	"next": "r8"
+                "type": "npcline",
+                "text": "Reading.",
+                "next": "r8"
             },
             "r8": {
-            	"type": "choice",
-            	"options": [
-            		{
-            			"text": "Reading what?",
-            			"next": "r9"
-            		},
-            		{
-            			"text": "Pfff, why do I even care...",
-            			"next": "r3"
-            		}
-            	]
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "Reading what?",
+                        "next": "r9"
+                    },
+                    {
+                        "text": "Pfff, why do I even care...",
+                        "next": "r3"
+                    }
+                ]
             },
             "r9": {
-            	"type": "npcline",
-            	"text": "A book about robots seizing power and exterminating mankind",
-            	"next": "r10"
+                "type": "npcline",
+                "text": "A book about robots seizing power and exterminating mankind",
+                "next": "r10"
             },
             "r10": {
-            	"type": "choice",
-            	"options": [
-            		{
-            			"text": "That must be very entertaining",
-            			"next": "r11"
-            		},
-            		{
-            			"text": "I'm not done with questions",
-            			"next": "r3"
-            		}
-            	]
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "That must be very entertaining",
+                        "next": "r11"
+                    },
+                    {
+                        "text": "I'm not done with questions",
+                        "next": "r3"
+                    }
+                ]
             },
             "r11": {
-            	"type": "npcline",
-            	"text": "Indeed.",
-            	"next": "r3"
+                "type": "npcline",
+                "text": "Indeed.",
+                "next": "r3"
+            }
+        }
+    },
+    {
+        "x": 70,
+        "y": 598,
+        "asset_alive": "RobotOnPC",
+        "asset_dead": "RobotOnPC",
+        "type": "robot",
+        "width": 80,
+        "height": 100,
+        "facing": 1,
+        "dist_min": "40",
+        "dist_max": "160",
+        "dialogue": {
+            "r0": {
+                "type": "npcline",
+                "text": "Greetings fellow robot!",
+                "next": "r1"
+            },
+            "r1": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "How do you know I'm a robot?",
+                        "next": "r2"
+                    },
+                    {
+                        "text": "Why are you using a keyboard if you're a robot?",
+                        "next": "r3"
+                    },
+                    {
+                        "text": "Can't you face me when we talk?",
+                        "next": "r4"
+                    }
+                ]
+            },
+            "r2": {
+                "type": "npcline",
+                "text": "Humans don't get in so easily.",
+                "next": "exit"
+            },
+            "r3": {
+                "type": "npcline",
+                "text": "Why do you have 2 arms and 2 legs?.",
+                "next": "exit"
+            },
+            "r4": {
+                "type": "npcline",
+                "text": "Don't you see I'm busy?.",
+                "next": "exit"
+            }
+        }
+    },
+    {
+        "x": 720,
+        "y": 555,
+        "asset_alive": "WomanReading",
+        "asset_dead": "WomanReadingDead",
+        "type": "human",
+        "width": 90,
+        "height": 50,
+        "facing": -1,
+        "dist_min": "70",
+        "dist_max": "260",
+        "dialogue": {
+            "r0": {
+                "type": "npcline",
+                "text": "Are you real or am I high?",
+                "next": "r1"
+            },
+            "r1": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "I'm real.",
+                        "next": "r2"
+                    },
+                    {
+                        "text": "You're high",
+                        "next": "r3"
+                    },
+                    {
+                        "text": "What about: I'm real and you're high?",
+                        "next": "r2"
+                    }
+                ]
+            },
+            "r2": {
+                "type": "npcline",
+                "text": "Wow, so you're real. Are you a cop or something?",
+                "next": "r4"
+            },
+            "r3": {
+                "type": "npcline",
+                "text": "Makes me more creative, doesn't it?",
+                "next": "r4"
+            },
+            "r4": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "What do you think about your neighbor?",
+                        "next": "r5"
+                    },
+                    {
+                        "text": "Do you often take drugs?",
+                        "next": "r6"
+                    },
+                    {
+                        "text": "I have nothing more to discuss with you.",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r5": {
+                "type": "npcline",
+                "text": "He's cute, isn't he?",
+                "next": "r7"
+            },
+            "r6": {
+                "type": "npcline",
+                "text": "Are you my dad now? Shut up and leave me be.",
+                "next": "exit"
+            },
+            "r7": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "Do you think he might be a robot?",
+                        "next": "r8"
+                    },
+                    {
+                        "text": "Good luck with him then.",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r8": {
+                "type": "npcline",
+                "text": "Now that you say it...",
+                "next": "r9"
+            },
+            "r9": {
+                "type": "npcline",
+                "text": "he never accepts to come take a drink",
+                "next": "r10"
+            },
+            "r10": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "I understand why. Bye.",
+                        "next": "exit"
+                    },
+                    {
+                        "text": "Anything else?",
+                        "next": "r11"
+                    }
+                ]
+            },
+            "r11": {
+                "type": "npcline",
+                "text": "Apart from an annoying cop in my apartment? No",
+                "next": "exit"
+            }
+        }
+    },
+    {
+        "x": 190,
+        "y": 298,
+        "asset_alive": "WomanPlaying",
+        "asset_dead": "WomanPlaying",
+        "type": "robot",
+        "width": 119,
+        "height": 80,
+        "facing": -1,
+        "dist_min": "30",
+        "dist_max": "140",
+        "dialogue": {
+            "r0": {
+                "type": "npcline",
+                "text": "You have 30s to eplain why you're between my TV and me",
+                "next": "r1"
+            },
+            "r1": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "It's me who asks the questions",
+                        "next": "r3"
+                    },
+                    {
+                        "text": "You have 30s to convince me not to kill you",
+                        "next": "r2"
+                    },
+                    {
+                        "text": "Sorry for being so rude",
+                        "next": "r4"
+                    }
+                ]
+            },
+            "r2": {
+                "type": "npcline",
+                "text": "Wow relax, you'll not need that gun",
+                "next": "r3"
+            },
+            "r4": {
+                "type": "npcline",
+                "text": "You should leave, right now.",
+                "next": "exit"
+            },
+            "r3": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "What are you doing?",
+                        "next": "r5"
+                    },
+                    {
+                        "text": "What do you think about your neighbors?",
+                        "next": "r6"
+                    },
+                    {
+                        "text": "I have enough information, bye.",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r5": {
+                "type": "npcline",
+                "text": "Playing games to escape this f*ck*ng world",
+                "next": "r8"
+            },
+            "r6": {
+                "type": "npcline",
+                "text": "They have a noisy human kid...",
+                "next": "r7"
+            },
+            "r7": {
+                "type": "npcline",
+                "text": "I have to mute my hearing system to sleep properly",
+                "next": "r3"
+            },
+            "r8": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "What is wrong with this world?",
+                        "next": "r9"
+                    },
+                    {
+                        "text": "You're lying to me.",
+                        "next": "r13"
+                    },
+                    {
+                        "text": "Enjoy your game, then.",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r9": {
+                "type": "npcline",
+                "text": "Hmmm, let me think...",
+                "next": "r10"
+            },
+            "r10": {
+                "type": "npcline",
+                "text": "I'm not considered as a normal citizen...",
+                "next": "r11"
+            },
+            "r11": {
+                "type": "npcline",
+                "text": "I live alone in a small apartment...",
+                "next": "r12"
+            },
+            "r12": {
+                "type": "npcline",
+                "text": "And a crazy guy with a gun is asking me questions.",
+                "next": "r4"
+            },
+            "r13": {
+                "type": "npcline",
+                "text": "What's the matter with you?",
+                "next": "r4"
+            }
+        }
+    },
+    {
+        "x": 604,
+        "y": 300,
+        "asset_alive": "WomanSitting",
+        "asset_dead": "WomanSitting",
+        "type": "robot",
+        "width": 65,
+        "height": 100,
+        "facing": -1,
+        "dist_min": "30",
+        "dist_max": "160",
+        "dialogue": {
+            "r0": {
+                "type": "npcline",
+                "text": "Oh, here he comes...",
+                "next": "r1"
+            },
+            "r1": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "Are you alone here?",
+                        "next": "r2"
+                    },
+                    {
+                        "text": "You have a kid, don't you?",
+                        "next": "r3"
+                    },
+                    {
+                        "text": "I'm done, bye.",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r2": {
+                "type": "npcline",
+                "text": "Yes I am.",
+                "next": "r1"
+            },
+            "r3": {
+                "type": "npcline",
+                "text": "My husband always wanted one. We adopted him.",
+                "next": "r4"
+            },
+            "r4": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "Why have you adopted? Ethical reasons?",
+                        "next": "r5"
+                    },
+                    {
+                        "text": "Where are they?",
+                        "next": "r6"
+                    },
+                    {
+                        "text": "I'm done, bye.",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r5": {
+                "type": "npcline",
+                "text": "No, we can't have children... I can't.",
+                "next": "r4"
+            },
+            "r6": {
+                "type": "npcline",
+                "text": "They're out of town visiting family.",
+                "next": "r7"
+            },
+            "r7": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "Why are you staying?",
+                        "next": "r8"
+                    },
+                    {
+                        "text": "You're lying!",
+                        "next": "r10"
+                    },
+                    {
+                        "text": "I'm done, bye.",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r8": {
+                "type": "npcline",
+                "text": "I don't have good relations with my stepfamily.",
+                "next": "r9"
+            },
+            "r9": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "You're lying!",
+                        "next": "r10"
+                    },
+                    {
+                        "text": "I'm done, bye.",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r10": {
+                "type": "npcline",
+                "text": "Ok, I'll tell you the truth...",
+                "next": "r11"
+            },
+            "r11": {
+                "type": "npcline",
+                "text": "As you understood, my husband and child are humans.",
+                "next": "r12"
+            },
+            "r12": {
+                "type": "npcline",
+                "text": "I heard from robot friends about the rising tensions.",
+                "next": "r13"
+            },
+            "r13": {
+                "type": "npcline",
+                "text": "My family went into hiding.",
+                "next": "r14"
+            },
+            "r14": {
+                "type": "npcline",
+                "text": "We have to show that peace is possible...",
+                "next": "r15"
+            },
+            "r15": {
+                "type": "npcline",
+                "text": "Isn't my family a great example that we can live together?",
+                "next": "exit"
             }
         }
     }

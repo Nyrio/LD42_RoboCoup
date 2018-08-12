@@ -18,6 +18,7 @@ class Npc extends ex.Actor {
 
     protected dialogue_position: string;
     protected being_killed: boolean;
+    protected talking: boolean;
     protected kill_count: number;
 
     constructor(scene: GameScene, npc_info) {
@@ -36,6 +37,7 @@ class Npc extends ex.Actor {
         this.action_possible = false;
         this.kill_count = 0;
         this.being_killed = false;
+        this.talking = false;
 
         this.sprite = new ex.Actor();
         this.sprite.addDrawing("alive", Resource[npc_info.asset_alive].asSprite());
@@ -76,10 +78,11 @@ class Npc extends ex.Actor {
         }
 
         // If already talking
-        if(this.gameScene.player.talking) {
+        if(this.talking) {
             if(this.dialogue_position == "exit") {
                 this.gameScene.dialogue.clean();
                 this.gameScene.player.talking = false;
+                this.talking = false;
             }
             else {
                 var currentStep = this.npc_info.dialogue[this.dialogue_position];
@@ -123,6 +126,7 @@ class Npc extends ex.Actor {
 
             if(engine.input.keyboard.isHeld(ex.Input.Keys.T)) {
                 this.gameScene.player.talking = true;
+                this.talking = true;
                 this.dialogue_position = "r0";
                 this.gameScene.dialogue.visible = true;
             }

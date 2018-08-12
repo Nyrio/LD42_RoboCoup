@@ -32,6 +32,10 @@ const introScene = new IntroScene();
 game.add('introScene', introScene);
 const gameScene = new GameScene();
 game.add('gameScene', gameScene);
+const successScene = new SuccessScene();
+game.add('successScene', successScene);
+const gameOverScene = new GameOverScene();
+game.add('gameOverScene', gameOverScene);
 
 game.backgroundColor = ex.Color.White;
 

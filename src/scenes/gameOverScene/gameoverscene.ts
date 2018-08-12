@@ -9,6 +9,19 @@ class GameOverScene extends ex.Scene {
     public onInitialize(engine: ex.Engine) {
         this.camera.pos = new ex.Vector(GameSettings.WIDTH/2,
                                         GameSettings.HEIGHT/2);
+
+        var mainSprite = new ex.Actor();
+        mainSprite.addDrawing(Resource.GameOver);
+        mainSprite.anchor.setTo(0, 0);
+        this.add(mainSprite);
+        mainSprite.z = 0;
+
+        // Paper effect
+        var paper_effect = new ex.Actor();
+        paper_effect.addDrawing(Resource.PaperEffect);
+        paper_effect.anchor.setTo(0, 0);
+        this.add(paper_effect);
+        paper_effect.z = 20;
     }
 
     public update(engine: ex.Engine, delta: number) {

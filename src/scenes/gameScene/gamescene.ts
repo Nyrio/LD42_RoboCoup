@@ -12,6 +12,7 @@ import { Dialogue } from '../../actors/ui/dialogue'
 class GameScene extends ex.Scene {
     public player: Player;
     public elevator: Elevator;
+    protected paper_effect: ex.Actor;
 
     public dialogue: Dialogue;
 
@@ -23,6 +24,13 @@ class GameScene extends ex.Scene {
         this.dialogue = new Dialogue(this, -170);
         this.add(this.dialogue);
         this.dialogue.z = 15;
+
+        // Paper effect
+        this.paper_effect = new ex.Actor();
+        this.paper_effect.addDrawing(Resource.PaperEffect);
+        this.paper_effect.anchor.setTo(0, 0);
+        this.add(this.paper_effect);
+        this.paper_effect.z = 20;
 
         // Adding player
         this.player = new Player(this);
@@ -70,6 +78,8 @@ class GameScene extends ex.Scene {
 
     public update(engine: ex.Engine, delta: number) {
         super.update(engine, delta);
+
+        this.paper_effect.y = this.camera.y - GameSettings.HEIGHT/2;
     }
 
     public onActivate() {}
