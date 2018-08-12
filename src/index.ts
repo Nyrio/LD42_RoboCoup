@@ -40,5 +40,5 @@ game.add('gameOverScene', gameOverScene);
 game.backgroundColor = ex.Color.White;
 
 game.start(loader).then(() => {
-    game.goToScene('gameScene');
+    game.goToScene('introScene');
 });

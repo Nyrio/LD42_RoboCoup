@@ -4,9 +4,9 @@ export namespace GameSettings {
     export const HEIGHT = 600;
 
     // Level info
-    export const FLOORS = 3;
+    export const FLOORS = 4;
     export const ELEVATOR_SPEED = 100; // pixels/s
-    export const NB_HUMANS = 2;
+    export const NB_HUMANS = 4;
 
     // Player info
     export const PLAYER_HEIGHT = 127;

@@ -6,7 +6,7 @@ import { GameScene } from '../../scenes/gameScene/gamescene';
 
 // A class to abstract dialogues
 class Dialogue extends ex.Actor {
-    protected gameScene: GameScene;
+    protected gameScene: ex.Scene;
 
     protected background_sprite: ex.Actor;
     protected y_from_cam: number;
@@ -21,7 +21,7 @@ class Dialogue extends ex.Actor {
     protected label2: ex.Label;
     protected label3: ex.Label;
 
-    constructor(scene: GameScene, y_from_cam: number) {
+    constructor(scene: ex.Scene, y_from_cam: number) {
         super();
 
         this.gameScene = scene;

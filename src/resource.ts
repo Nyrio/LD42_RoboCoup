@@ -26,6 +26,16 @@ var Resource = {
     WomanReadingDead: new ex.Texture("assets/woman_reading_dead.png"),
     WomanPlaying: new ex.Texture("assets/woman_playing.png"),
     WomanSitting: new ex.Texture("assets/woman_sitting.png"),
+    ManSofa: new ex.Texture("assets/man_sofa.png"),
+    ManSofaDead: new ex.Texture("assets/man_sofa_dead.png"),
+    ManPainting: new ex.Texture("assets/man_painting.png"),
+    ManPaintingDead: new ex.Texture("assets/man_painting_dead.png"),
+
+    // intro
+    IntroJson: new ex.Resource('assets/intro.json', 'json'),
+    Conference: new ex.Texture("assets/conference.png"),
+    WindoseUpdate: new ex.Texture("assets/windose_update.png"),
+    Hrlf: new ex.Texture("assets/hrlf.png"),
 
     // UI
     PaperEffect: new ex.Texture("assets/paper_effect.png"),

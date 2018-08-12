@@ -7,7 +7,7 @@ import { Npc } from '../../actors/npc/npc';
 import { Apartment } from '../../actors/apartment/apartment';
 import { Elevator } from '../../actors/elevator/elevator';
 import { ElevatorOut } from '../../actors/elevator/elevatorOut';
-import { Dialogue } from '../../actors/ui/dialogue'
+import { Dialogue } from '../../actors/ui/dialogue';
 
 class GameScene extends ex.Scene {
     public player: Player;

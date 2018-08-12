@@ -539,5 +539,121 @@
                 "next": "exit"
             }
         }
+    },
+    {
+        "x": 650,
+        "y": 150,
+        "asset_alive": "ManSofa",
+        "asset_dead": "ManSofaDead",
+        "type": "human",
+        "width": 132,
+        "height": 68,
+        "facing": -1,
+        "dist_min": "30",
+        "dist_max": "160",
+        "dialogue": {
+            "r0": {
+                "type": "npcline",
+                "text": "Maaan... I'm... I'm wasted... buuurp",
+                "next": "exit"
+            }
+        }
+    },
+    {
+        "x": 75,
+        "y": 150,
+        "asset_alive": "ManPainting",
+        "asset_dead": "ManPaintingDead",
+        "type": "human",
+        "width": 90,
+        "height": 110,
+        "facing": 1,
+        "dist_min": "40",
+        "dist_max": "160",
+        "dialogue": {
+            "r0": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "Hey! Didn't hear me enter?",
+                        "next": "r1"
+                    },
+                    {
+                        "text": "Nice painting",
+                        "next": "r2"
+                    }
+                ]
+            },
+            "r1": {
+                "type": "npcline",
+                "text": "I did, but I'm a bit busy right now. Who are you?",
+                "next": "r3"
+            },
+            "r2": {
+                "type": "npcline",
+                "text": "Thanks, but who are you?",
+                "next": "r3"
+            },
+            "r3": {
+                "type": "npcline",
+                "text": "A cop, or some robot extremist?",
+                "next": "r4"
+            },
+            "r4": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "And you, who are you?",
+                        "next": "r5"
+                    },
+                    {
+                        "text": "A robot extremist",
+                        "next": "r6"
+                    },
+                    {
+                        "text": "Nevermind, I'll let you paint",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r5": {
+                "type": "npcline",
+                "text": "A painter",
+                "next": "r7"
+            },
+            "r6": {
+                "type": "npcline",
+                "text": "I have nothing for you, leave me be.",
+                "next": "exit"
+            },
+            "r7": {
+                "type": "choice",
+                "options": [
+                    {
+                        "text": "Human or robot?",
+                        "next": "r8"
+                    },
+                    {
+                        "text": "Nevermind, I'll let you paint",
+                        "next": "exit"
+                    }
+                ]
+            },
+            "r8": {
+                "type": "npcline",
+                "text": "I don't like that kind of questions...",
+                "next": "r9"
+            },
+            "r9": {
+                "type": "npcline",
+                "text": "But you'll find out anyway so, well, I'm human.",
+                "next": "r10"
+            },
+            "r10": {
+                "type": "npcline",
+                "text": "Now please let me paint",
+                "next": "exit"
+            }
+        }
     }
 ]
