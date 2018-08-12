@@ -39,6 +39,8 @@ class Elevator extends ex.Actor {
         this.sprite.setWidth(this.getWidth());
         this.sprite.setHeight(this.getHeight());
         this.add(this.sprite);
+
+        Resource.ElevatorBeep.setVolume(0.5);
     }
 
     public onInitialize(engine: ex.Engine) {
@@ -75,6 +77,7 @@ class Elevator extends ex.Actor {
             this.gameScene.camera.y = this.target;
             this.moving = 0;
             this.locked = false;
+            Resource.ElevatorBeep.play();
         }
     }
 }

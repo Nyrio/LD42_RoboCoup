@@ -62,6 +62,7 @@ class Npc extends ex.Actor {
         // Being killed
         if(this.being_killed) {
             this.kill_count -= delta;
+            if(this.kill_count < 1200 && this.kill_count + delta >= 1200) Resource.GunShot.play();
             if(this.kill_count < 0) {
                 this.gameScene.player.endKill(engine);
                 this.being_killed = false;
