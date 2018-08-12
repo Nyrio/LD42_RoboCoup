@@ -45,8 +45,8 @@ var Resource = {
     WellDone: new ex.Texture("assets/well_done.png"),
 
     // sounds
-    GunShot: new ex.Sound('/assets/gun_shot.mp3', '/assets/gun_shot.wav'),
-    ElevatorBeep: new ex.Sound('/assets/elevator_beep.mp3', '/assets/elevator_beep.wav')
+    GunShot: new ex.Sound('assets/gun_shot.mp3', '/assets/gun_shot.wav'),
+    ElevatorBeep: new ex.Sound('assets/elevator_beep.mp3', '/assets/elevator_beep.wav')
 }
 for(var apart_nb = 0; apart_nb < 2*GameSettings.FLOORS; apart_nb++) {
     Resource["Apartment" + (apart_nb) + "Back"] = new ex.Texture("assets/apartment" + (apart_nb) + "_back.png");
