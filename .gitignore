@@ -1,0 +1,20 @@
+package.json
+package-lock.json
+
+# Graphic working files
+*.kra
+*.kra~
+*.png~
+
+# Node stuff
+node_modules/
+.npm
+
+# Windows stuff
+.DS_Store
+
+# Editor files
+*.sublime*
+
+# Windows
+git.exe.stackdump
