@@ -1,0 +1,120 @@
+[
+    {
+        "x": 80,
+        "y": 450,
+        "asset_alive": "OldMan",
+        "asset_dead": "OldManDead",
+        "type": "human",
+        "width": 70,
+        "height": 70,
+        "facing": 1,
+        "dist_min": "20",
+        "dist_max": "120",
+        "dialogue": {
+        	"r0": {
+        		"type": "npcline",
+            	"text": "What the hell are you doing in my home?",
+            	"next": "r1"
+            },
+            "r1": {
+                "type": "choice",
+                "options": [
+                    {
+                    	"text": "Just asking a few questions, you better answer",
+                    	"next": "r2"
+                    },
+                    {
+                    	"text": "Sorry, didn't mean to disturb you",
+                    	"next": "exit"
+                    }
+                ]
+            },
+            "r2": {
+                "type": "npcline",
+                "text": "Hmm... right. You have 5 minutes.",
+                "next": "r3"
+            },
+            "r3": {
+            	"type": "choice",
+            	"options": [
+            		{
+            			"text": "How old are you?",
+            			"next": "r4"
+            		},
+            		{
+            			"text": "What are you doing?",
+            			"next": "r7"
+            		},
+            		{
+            			"text": "Thanks for your time",
+            			"next": "exit"
+            		}
+            	]
+            },
+            "r4": {
+            	"type": "npcline",
+            	"text": "124. Do I look old to you?",
+            	"next": "r5"
+            },
+            "r5": {
+            	"type": "choice",
+            	"options": [
+            		{
+            			"text": "Older than I will ever look",
+            			"next": "r6"
+            		},
+            		{
+            			"text": "Shut up and answer my questions",
+            			"next": "r3"
+            		}
+            	]
+            },
+            "r6": {
+            	"type": "npcline",
+            	"text": "You filthy robot! Get out of my home",
+            	"next": "exit"
+            },
+            "r7": {
+				"type": "npcline",
+            	"text": "Reading.",
+            	"next": "r8"
+            },
+            "r8": {
+            	"type": "choice",
+            	"options": [
+            		{
+            			"text": "Reading what?",
+            			"next": "r9"
+            		},
+            		{
+            			"text": "Pfff, why do I even care...",
+            			"next": "r3"
+            		}
+            	]
+            },
+            "r9": {
+            	"type": "npcline",
+            	"text": "A book about robots seizing power and exterminating mankind",
+            	"next": "r10"
+            },
+            "r10": {
+            	"type": "choice",
+            	"options": [
+            		{
+            			"text": "That must be very entertaining",
+            			"next": "r11"
+            		},
+            		{
+            			"text": "I'm not done with questions",
+            			"next": "r3"
+            		}
+            	]
+            },
+            "r11": {
+            	"type": "npcline",
+            	"text": "Indeed.",
+            	"next": "r3"
+            }
+        }
+    }
+]
