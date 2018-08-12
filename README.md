@@ -4,7 +4,7 @@ This game was made for the game jam Ludum Dare #42 (theme: *running out of space
 
 ## Playing
 
-The game is online at the address: ...
+The game is online at the address: https://nyrio.github.io/LD42_RoboCoup/
 
 
 ## Compiling the game
