@@ -9,7 +9,7 @@ It’s the robot revolution and they want to exterminate all the humans on Earth
 
 The game is online at the address: https://nyrio.github.io/LD42_RoboCoup/
 
-Commands:
+Controls:
  - WASD or arrows to move horizontally, and vertically in the elevator
  - T to talk
  - K to kill
