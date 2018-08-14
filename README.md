@@ -15,7 +15,7 @@ Controls:
  - WASD or arrows to move horizontally, and vertically in the elevator
  - T to talk
  - K to kill
- - SPACE in dialogues and 1-2-3 when there are options.
+ - SPACE in dialogues and numpad 1-2-3 when there are options (or a-b-c if you don't have a numpad).
 
 ## Compiling the game
 

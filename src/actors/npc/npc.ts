@@ -102,9 +102,9 @@ class Npc extends ex.Actor {
                         else this.gameScene.dialogue["line" + (i+1)] = (i+1) + ". " + currentStep.options[i].text;
                     }
                     this.gameScene.dialogue.textMode = 1;
-                    let choice : number = engine.input.keyboard.wasPressed(ex.Input.Keys.Num1) ? 0 :
-                                          (engine.input.keyboard.wasPressed(ex.Input.Keys.Num2) ? 1 :
-                                           (engine.input.keyboard.wasPressed(ex.Input.Keys.Num3) ? 2 : -1));
+                    let choice : number = (engine.input.keyboard.wasPressed(ex.Input.Keys.Num1) || engine.input.keyboard.wasPressed(ex.Input.Keys.A)) ? 0 :
+                                          ((engine.input.keyboard.wasPressed(ex.Input.Keys.Num2) || engine.input.keyboard.wasPressed(ex.Input.Keys.B)) ? 1 :
+                                           (engine.input.keyboard.wasPressed(ex.Input.Keys.Num3) || engine.input.keyboard.wasPressed(ex.Input.Keys.C)) ? 2 : -1);
                     if(choice != -1 && choice < currentStep.options.length)
                         this.dialogue_position = currentStep.options[choice].next;
                 }
